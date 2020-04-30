@@ -1,5 +1,8 @@
 package view;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -14,6 +17,43 @@ public class AmenityGui {
 	private JTextField nameAdd = new JTextField();
 	private JComboBox nameDelete = new JComboBox();
 	private JComboBox nameUpdate = new JComboBox();
+	
+	public JFrame getf() {
+		return f;
+	}
+	public void setf(JFrame f) {
+		this.f = f;
+	}
+	
+	public JButton getadd() {
+		return add;
+	}
+	public void setadd(JButton add) {
+		this.add = add;
+	}
+	
+	public JButton getdelete() {
+		return delete;
+	}
+	public void setdelete(JButton delete) {
+		this.delete = delete;
+	}
+	public JButton getupdate() {
+		return update;
+	}
+	public void setupdate(JButton update) {
+		this.update = update;
+	}
+	
+	public JTextField getnameAdd() {
+		return nameAdd;
+	}
+	public void setnameAdd(JTextField nameAdd) {
+		this.nameAdd = nameAdd;
+	}
+	
+	
+	
 	
 	public AmenityGui() {
 		
@@ -30,6 +70,27 @@ public class AmenityGui {
 		f.add(nameAdd);
 		f.add(nameDelete);
 		f.add(nameUpdate);
+		
+		add.addActionListener( new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				//to Do function
+			}
+		});
+		
+		delete.addActionListener( new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				//to do function				
+			}
+		});
+		
+		update.addActionListener( new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				//to do function				
+			}
+		});
 
 		f.setSize(1000,500);
 		f.setLayout(null);

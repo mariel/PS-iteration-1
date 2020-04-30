@@ -1,5 +1,8 @@
 package view;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.*;
 
 public class HydroGui {
@@ -27,6 +30,27 @@ public class HydroGui {
 		f.add(nameAdd);
 		f.add(nameDelete);
 		f.add(nameUpdate);
+		
+		add.addActionListener( new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				//to Do function
+			}
+		});
+		
+		delete.addActionListener( new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				//to do function				
+			}
+		});
+		
+		update.addActionListener( new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				//to do function				
+			}
+		});
 		
 		
 		f.setSize(1000,500);
